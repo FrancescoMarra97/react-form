@@ -24,9 +24,9 @@ function App() {
   function handleTrashTitleClick(e) {
     const titleIndexToTrash = Number(e.target.getAttribute("data-index"))
     console.log(titleIndexToTrash);
-    const newTitles = titles.filter((title, index) => index != titleIndexToTrash)
+    const removeTitles = titles.filter((title, index) => index != titleIndexToTrash)
     console.log(newTitles);
-    setTitle("newTiles")
+    setTitle(removeTitles)
   }
   return (
     <>

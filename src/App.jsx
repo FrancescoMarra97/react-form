@@ -8,6 +8,12 @@ const articleTitle = [
 function App() {
   const [title, setTitle] = useState(articleTitle)
 
+
+  function addTitle(e) {
+    e.preventDefault()
+    console.log(articleTitle);
+
+  }
   return (
     <>
 
